@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Rail-ZongZi/ElectronicCommerceProject/issues"
   },
-  "homepage": "https://github.com/Rail-ZongZi/ElectronicCommerceProject#readme"
+  "homepage": "https://github.com/Rail-ZongZi/ElectronicCommerceProject#readme",
+  "dependencies": {
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
