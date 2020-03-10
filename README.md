@@ -64,3 +64,21 @@
 
 > webpack 基本配置
 
+- [x] css 拆分 、 图片 、 图标字体
+
+- [x] 服务器 `devServer`
+
+- [x] 打包时候进度条，使用 [`progress-bar-webpack-plugin`](https://github.com/clessg/progress-bar-webpack-plugin)插件
+
+> 通用的js工具封装
+
+- 网络请求工具
+
+- URL路径工具
+
+- 模板渲染工具 -- hogan
+
+- 字段验证 && 通用提示
+
+- 统一跳转
+

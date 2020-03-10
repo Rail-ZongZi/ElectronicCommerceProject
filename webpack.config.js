@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 const config = {
   // 开发环境设置
@@ -7,12 +8,12 @@ const config = {
   // 入口文件
   entry: {
     'index': './src/pages/index/index.js',
-    'home': './src/pages/home/index.js'
+    'home': './src/pages/login/index.js'
   },
   // 输出文件
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash:8].js'
+    filename: 'js/[name].[hash:8].js'
   },
   // 服务器
   devServer: {
@@ -39,7 +40,7 @@ const config = {
 						}
 					},
 					'sass-loader',
-					'cnpm '
+					'postcss-loader'
 				]
 			},
 			{
@@ -55,25 +56,29 @@ const config = {
 				}
 			},
 			{
-				test: /\.(woff|woff2|svg|ttf|eot)$/i,
+				test: /\.(eot|svg|ttf|woff|woff2|otf)$/i,
 				use: {
 					loader: "file-loader"
 				}
 			}
 		]
 	},
+	externals: {
+		'jquery' : 'window.jQuery'    // 引入jQuery
+	},
   // 插件
   plugins: [
+		new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
       title: 'index页面',
       favicon: 'favicon.ico',
       template: './src/views/index/index.html'
     }),
-    new HtmlWebpackPlugin({
-      title: 'Home页面',
-      favicon: 'favicon.ico',
-      template: './src/views/home/index.html'
-    })
+    // new HtmlWebpackPlugin({
+    //   title: 'Home页面',
+    //   favicon: 'favicon.ico',
+    //   template: './src/views/home/index.html'
+		// })
   ]
 }
 
