@@ -1,5 +1,8 @@
+const port = 9090
+
 module.exports = {
   devServer: {
-    port: 9090
+    host: '0.0.0.0',
+    port: port
   }
 }
