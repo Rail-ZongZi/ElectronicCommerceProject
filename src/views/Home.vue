@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/images/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav-header/>
+    <router-view/>
+    <nav-footer/>
   </div>
 </template>
 
-<script>
+<script type='text/ecmascript-6'>
+import NavHeader from '@/components/NavHeader/index'
+import NavFooter from '@/components/NavFooter/index'
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'Home',
+  data() {
+    return {}
+  },
   components: {
-    HelloWorld
+    'nav-header': NavHeader,
+    'nav-footer': NavFooter
   }
 }
 </script>
+
+<style lang="scss" scoped rel='stylesheet/scss'>
+</style>
