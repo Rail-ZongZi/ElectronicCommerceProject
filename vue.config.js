@@ -1,7 +1,7 @@
-const path = require('path');
-const port = 9090;
+const path = require('path')
+const port = 9090
 
-const resolve = dir => path.join(__dirname, dir);
+const resolve = dir => path.join(__dirname, dir)
 
 module.exports = {
   devServer: {
@@ -11,7 +11,7 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
-        prependData: `@import "./src/assets/styles/index.scss";`
+        prependData: '@import "./src/assets/styles/index.scss";'
       }
     }
   },
