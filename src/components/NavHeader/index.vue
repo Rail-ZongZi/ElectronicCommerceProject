@@ -1,5 +1,5 @@
 <template>
-  <div class="nav_header">导航栏</div>
+  <div class="nav_header">头部导航栏</div>
 </template>
 
 <script type='text/ecmascript-6'>

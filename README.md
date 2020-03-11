@@ -7,18 +7,15 @@
 > `views`视图层中的目录结构
 
 ```markdown
-  Home.vue    // 
-  Index.vue   // 
-  
 ```
 
 > 项目流程
 
-![流程](describe/e-commerce.png)
+![流程](screenshots/e-commerce.png)
 
 > 核心技术
 
-![流程图](describe/content.png)
+![流程图](screenshots/content.png)
 
 > Node 环境升级
 
@@ -30,4 +27,38 @@
     最新LTS版本： n lts
     最新版本： n latest
     某一个版本： n 10.0.0
+```
+
+前端跨域解决
+-
+
+**描述**
+
+- 浏览器请求必须遵循同源策略： `同域名` 、 `同端口` 、 `同协议`
+
+> `CORS` 跨域
+
+> `JSONP` 跨域
+
+- 是一个js脚本
+
+> 代理跨域
+
+- 通过修改 `nginx` 服务器配置来实现
+
+- 通过 `vue.config.js` 中设置 `proxy` 代理实现
+
+**前后端接口字段规范**
+
+- `status` 设置为 `0` 表示成功登录
+
+- `status` 设置为 `10` 表示未登录
+
+- `data` 表示 数据存储
+
+```json
+    {
+      "status": 0,
+      "data": {}
+    }
 ```
