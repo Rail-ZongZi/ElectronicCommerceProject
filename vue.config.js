@@ -8,6 +8,13 @@ module.exports = {
     host: '0.0.0.0',
     port: port
   },
+  css: {
+    loaderOptions: {
+      scss: {
+        prependData: `@import "./src/assets/styles/index.scss";`
+      }
+    }
+  },
   chainWebpack: (config) => {
     config.resolve.alias
       .set('@', resolve('src'))
