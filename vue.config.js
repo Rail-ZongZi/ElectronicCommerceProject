@@ -6,10 +6,10 @@ const resolve = dir => path.join(__dirname, dir)
 module.exports = {
   devServer: {
     host: '0.0.0.0',
-    port: port,
-    proxy: {
-      '/api': {}
-    }
+    port: port
+    // proxy: {
+    //   '/api': {}
+    // }
   },
   css: {
     loaderOptions: {
@@ -25,5 +25,6 @@ module.exports = {
       .set('views', resolve('src/views'))
       .set('storage', resolve('src/storage'))
       .set('store', resolve('src/store'))
+      .set('plugins', resolve('src/plugins'))
   }
 }
