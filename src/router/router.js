@@ -1,18 +1,30 @@
-import Home from '@/views/Home.vue'
+import Home from '@/views/Home'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
-  },
-  {
-    path: '/index',
-    name: 'Index',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '@/views/Index.vue')
+    component: Home,
+    meta: {
+      title: '首页'
+    },
+    children: [
+      {
+        path: 'index',
+        name: 'Index',
+        component: () => import('@/views/Index')
+      },
+      {
+        path: 'product/:id',
+        name: 'Product',
+        component: () => import('@/views/Product')
+      },
+      {
+        path: 'detail/:id',
+        name: 'Detail',
+        component: () => import('@/views/Detail')
+      }
+    ]
   }
 ]
 

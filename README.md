@@ -63,6 +63,14 @@
     }
 ```
 
+> 定义请求头规则
+
+- `Content-Type: application/json`
+
+- 开发顺序 ： `DAO` （数据库）→  `Service` （业务逻辑） →  `Controller` （返回前端数据）
+
+- 单元测试： Service （层）
+
 Storage 封装
 -
 
@@ -78,4 +86,6 @@ Storage 封装
 - 未登录统一拦截
 
 - 请求值、返回值统一处理
+
+
 
