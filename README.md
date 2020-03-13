@@ -62,3 +62,20 @@
       "data": {}
     }
 ```
+
+Storage 封装
+-
+
+> `Cookie` 和 `localStorage` 和 `sessionStorage` 三者区别
+
+- 为什么要封装 `Storage` 本身不是已经由 `API`
+
+请求响应拦截
+-
+
+- 统一报错
+
+- 未登录统一拦截
+
+- 请求值、返回值统一处理
+

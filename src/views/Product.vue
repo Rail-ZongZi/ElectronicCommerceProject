@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    product页面
+    product页面---商品站
   </div>
 </template>
 
