@@ -11,13 +11,13 @@ module.exports = {
     //   '/api': {}
     // }
   },
-  // css: {
-  //   loaderOptions: {
-  //     sass: {
-  //       prependData: '@import "./src/assets/styles/index.scss"'
-  //     }
-  //   }
-  // },
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `@import "~@/assets/styles/variables.scss";`
+      }
+    }
+  },
   chainWebpack: (config) => {
     config.resolve.alias
       .set('@', resolve('src'))
