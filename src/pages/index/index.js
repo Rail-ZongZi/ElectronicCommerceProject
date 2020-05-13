@@ -1,12 +1,18 @@
 import cats from './cats.js';
 import '../../assets/styles/login.scss';
+// import pic from '../../assets/images/logos.png';
 
-var $$ = require("jquery")
+// var $ = require("jquery")
 
-$$('body').html('jquery测试')
+// $('body').html('jquery测试...');
+console.log(cats);
+// console.log('测试打印');
 
-console.log('index页面 ~~~~ ');
+// var root = document.getElementById('root');
+// const img = new Image();
+// img.src = pic;
+// root.appendChild(img);
 
-let cst = cats.map(item => item * 3);
-console.log(cst);
-
+// $('.onBtn').click(function() {
+//   alert('点击按钮...');
+// });

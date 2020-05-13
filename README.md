@@ -67,6 +67,8 @@
 - [x] css 拆分 、 图片 、 图标字体
 
 - [x] 服务器 `devServer`
+  - 启动进度条 `compress: true`
+  - 打包压缩gzip `progress: true`
 
 - [x] 打包时候进度条，使用 [`progress-bar-webpack-plugin`](https://github.com/clessg/progress-bar-webpack-plugin)插件
 
