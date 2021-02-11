@@ -1,5 +1,5 @@
 const path = require('path')
-const port = 9090
+const port = 9099
 
 const resolve = dir => path.join(__dirname, dir)
 
@@ -13,8 +13,8 @@ module.exports = {
   },
   css: {
     loaderOptions: {
-      sass: {
-        prependData: `@import "~@/assets/styles/variables.scss";`
+      scss: {
+        additionalData: `@import "~@/assets/styles/variables.scss";`
       }
     }
   },

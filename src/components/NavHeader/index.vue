@@ -95,6 +95,5 @@ export default {
       }
     }
   }
-  .nav-header {}
 }
 </style>

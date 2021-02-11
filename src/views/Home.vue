@@ -9,7 +9,6 @@
 <script type='text/ecmascript-6'>
 import NavHeader from '@/components/NavHeader/index'
 import NavFooter from '@/components/NavFooter/index'
-// @ is an alias to /src
 export default {
   name: 'Home',
   data() {
