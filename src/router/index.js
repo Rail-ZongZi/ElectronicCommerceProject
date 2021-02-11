@@ -14,7 +14,7 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
-    document.title = to.meta.title
+    document.title = `小米商城 - ${to.meta.title}`
   }
   next()
 })
