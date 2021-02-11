@@ -3,10 +3,7 @@
     <div class="nav-topbar">
       <div class="container">
         <div class="topbar-nav">
-          <a href="javascript:void(0);">小米商城</a>
-          <a href="javascript:void(0);">MUI</a>
-          <a href="javascript:void(0);">云服务</a>
-          <a href="javascript:void(0);">协议规则</a>
+          <a v-for="item in navList" :key="item.id" href="javascript:void(0);">{{item.name}}</a>
         </div>
         <div class="topbar-cart">
           <router-link to="/">登录</router-link>
@@ -37,8 +34,51 @@
 <script type='text/ecmascript-6'>
 export default {
   name: 'NavHeader',
-  data() {
-    return {}
+  data () {
+    return {
+      navList: [
+        {
+          id: '001',
+          name: '小米商城'
+        },
+        {
+          id: '002',
+          name: 'MUI'
+        },
+        {
+          id: '003',
+          name: 'IoT'
+        },
+        {
+          id: '004',
+          name: '云服务'
+        },
+        {
+          id: '005',
+          name: '天星数科'
+        },
+        {
+          id: '006',
+          name: '有品'
+        },
+        {
+          id: '007',
+          name: '小爱开放平台'
+        },
+        {
+          id: '008',
+          name: '企业团购'
+        },
+        {
+          id: '009',
+          name: '资质证照'
+        },
+        {
+          id: '010',
+          name: '协议规则'
+        }
+      ]
+    }
   }
 }
 </script>
@@ -56,11 +96,16 @@ export default {
       justify-content: space-between;
       .topbar-nav {
         a {
-          margin-right: 18px;
+          margin-right: 8px;
           &:after {
             content: "|";
-            margin-left: 18px;
-            color: $color-gray-ll;
+            display: inline-block;
+            margin-left: 8px;
+            color: $color-shopping-l;
+          }
+          // 最后一个不显示
+          &:last-child::after {
+            display: none;
           }
           &:hover {
             color: #fff;
@@ -81,8 +126,8 @@ export default {
           display: inline-block;
           padding: 0 10px;
           margin-left: 15px;
-          color: $color-gray-l;
-          background-color: $color-shopping-l;
+          color: $bgcolor-white-S;
+          background-color: $bgcolor_orange-S;
           &:hover {
             background-color: $bgcolor-white-S;
             color: $color-orange_hover-l;
@@ -94,6 +139,11 @@ export default {
         }
       }
     }
+  }
+  .nav-header {
+    height: 100px;
+    background-color: $bgcolor-white-S;
+    .header-logo {}
   }
 }
 </style>
