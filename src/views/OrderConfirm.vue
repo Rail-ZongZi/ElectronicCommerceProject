@@ -1,7 +1,5 @@
 <template>
-  <div class="order-confirm">
-    订单确认
-  </div>
+  <div class="order-confirm">订单确认</div>
 </template>
 
 <script type="text/ecmascript-6">
@@ -13,6 +11,4 @@ export default {
 }
 </script>
 
-<style scoped lang="scss" rel="stylesheet/scss">
-
-</style>
+<style scoped lang="scss" rel="stylesheet/scss"></style>

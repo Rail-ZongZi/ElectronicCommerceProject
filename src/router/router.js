@@ -1,4 +1,4 @@
-import Home from '@/views/Home'
+import Home from '@/views/Home';
 
 const routes = [
   {
@@ -26,6 +26,6 @@ const routes = [
       }
     ]
   }
-]
+];
 
-export default routes
+export default routes;

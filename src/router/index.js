@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import routes from './router.js'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import routes from './router.js';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const router = new VueRouter({
   // mode: 'history',
@@ -10,13 +10,13 @@ const router = new VueRouter({
   linkExactActiveClass: 'active',
   base: process.env.BASE_URL,
   routes
-})
+});
 
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
-    document.title = `小米商城 - ${to.meta.title}`
+    document.title = `小米商城 - ${to.meta.title}`;
   }
-  next()
-})
+  next();
+});
 
-export default router
+export default router;

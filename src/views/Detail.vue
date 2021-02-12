@@ -1,10 +1,8 @@
 <template>
-  <div class="detail">
-    商品详情页面
-  </div>
+  <div class="detail">商品详情页面</div>
 </template>
 
-<script type='text/ecmascript-6'>
+<script type="text/ecmascript-6">
 export default {
   name: 'detail',
   data() {
@@ -13,5 +11,4 @@ export default {
 }
 </script>
 
-<style scoped lang='scss' rel='stylesheet/scss'>
-</style>
+<style scoped lang="scss" rel="stylesheet/scss"></style>

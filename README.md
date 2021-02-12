@@ -1,12 +1,13 @@
 # ElectronicCommerceProject
-#### 基于小米电商平台采用vue.js全家桶实现
+
+#### 基于小米电商平台采用 vue.js 全家桶实现
 
 > 包含需求分析
-
 
 > `views`视图层中的目录结构
 
 ```markdown
+
 ```
 
 > 项目流程
@@ -29,8 +30,7 @@
     某一个版本： n 10.0.0
 ```
 
-前端跨域解决
--
+## 前端跨域解决
 
 **描述**
 
@@ -40,7 +40,7 @@
 
 > `JSONP` 跨域
 
-- 是一个js脚本
+- 是一个 js 脚本
 
 > 代理跨域
 
@@ -57,35 +57,30 @@
 - `data` 表示 数据存储
 
 ```json
-    {
-      "status": 0,
-      "data": {}
-    }
+{
+  "status": 0,
+  "data": {}
+}
 ```
 
 > 定义请求头规则
 
 - `Content-Type: application/json`
 
-- 开发顺序 ： `DAO` （数据库）→  `Service` （业务逻辑） →  `Controller` （返回前端数据）
+- 开发顺序 ： `DAO` （数据库）→ `Service` （业务逻辑） → `Controller` （返回前端数据）
 
 - 单元测试： Service （层）
 
-Storage 封装
--
+## Storage 封装
 
 > `Cookie` 和 `localStorage` 和 `sessionStorage` 三者区别
 
 - 为什么要封装 `Storage` 本身不是已经由 `API`
 
-请求响应拦截
--
+## 请求响应拦截
 
 - 统一报错
 
 - 未登录统一拦截
 
 - 请求值、返回值统一处理
-
-
-
