@@ -1,7 +1,5 @@
 <template>
-  <div class="alipay">
-    支付宝中转页面
-  </div>
+  <div class="alipay">支付宝中转页面</div>
 </template>
 
 <script type="text/ecmascript-6">
@@ -13,6 +11,4 @@ export default {
 }
 </script>
 
-<style scoped lang="scss" rel="stylesheet/scss">
-
-</style>
+<style scoped lang="scss" rel="stylesheet/scss"></style>

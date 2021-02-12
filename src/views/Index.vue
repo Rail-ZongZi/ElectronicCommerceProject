@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script type='text/ecmascript-6'>
+<script type="text/ecmascript-6">
 export default {
   name: 'Index',
   data() {
@@ -16,5 +16,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped rel='stylesheet/scss'>
-</style>
+<style lang="scss" scoped rel="stylesheet/scss"></style>

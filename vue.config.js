@@ -1,7 +1,7 @@
-const path = require('path')
-const port = 9099
+const path = require('path');
+const port = 9099;
 
-const resolve = dir => path.join(__dirname, dir)
+const resolve = (dir) => path.join(__dirname, dir);
 
 module.exports = {
   devServer: {
@@ -25,6 +25,6 @@ module.exports = {
       .set('views', resolve('src/views'))
       .set('storage', resolve('src/storage'))
       .set('store', resolve('src/store'))
-      .set('plugins', resolve('src/plugins'))
+      .set('plugins', resolve('src/plugins'));
   }
-}
+};

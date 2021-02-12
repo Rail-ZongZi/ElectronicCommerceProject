@@ -2,7 +2,7 @@
   <div class="nav_footer">底部</div>
 </template>
 
-<script type='text/ecmascript-6'>
+<script type="text/ecmascript-6">
 export default {
   name: 'NavFooter',
   data() {
@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style scoped lang='scss' rel='stylesheet/scss'>
+<style scoped lang="scss" rel="stylesheet/scss">
 .nav_footer {
   position: fixed;
   bottom: 0;

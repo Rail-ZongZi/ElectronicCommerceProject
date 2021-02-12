@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <nav-header/>
-    <router-view/>
-    <nav-footer/>
+    <nav-header />
+    <router-view />
+    <nav-footer />
   </div>
 </template>
 
-<script type='text/ecmascript-6'>
+<script type="text/ecmascript-6">
 import NavHeader from '@/components/NavHeader/index'
 import NavFooter from '@/components/NavFooter/index'
 export default {
@@ -21,5 +21,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped rel='stylesheet/scss'>
-</style>
+<style lang="scss" scoped rel="stylesheet/scss"></style>
