@@ -19,10 +19,26 @@
       <div class="container header-content">
         <div class="header-logo">
           <icon-svg icon-class="xiaomi" />
+          <!-- <icon-svg icon-class="home" /> -->
         </div>
         <div class="header-menu">
           <ul v-for="item in menuList" :key="item.id">
-            <li>{{ item.name }}</li>
+            <li>
+              <a href="#">{{ item.name }}</a>
+              <div class="item-children">
+                <div class="container">
+                  <ul>
+                    <li>
+                      <router-link to="/">
+                        <img src="" alt=""/>
+                        <p>小米CC9</p>
+                        <span>￥1799.00元</span>
+                      </router-link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="header-search">
@@ -181,6 +197,7 @@ export default {
     }
   }
   .nav-header {
+    position: relative;
     height: 100px;
     line-height: 100px;
     background-color: $bgcolor-white-S;
@@ -206,6 +223,15 @@ export default {
             display: inline;
             cursor: pointer;
             padding: 0 10px;
+            .item-children {
+              position: absolute;
+              top: 100px;
+              left: 0;
+              display: inline-block;
+              width: 100%;
+              height: 112px;
+              background-color: red;
+            }
           }
           &:hover {
             color: $color-orange_hover-l;

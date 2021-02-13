@@ -1,4 +1,4 @@
-import Home from '@/views/Home';
+import Home from '@/views/Home'
 
 const routes = [
   {
@@ -10,11 +10,6 @@ const routes = [
     },
     children: [
       {
-        path: 'index',
-        name: 'Index',
-        component: () => import('@/views/Index')
-      },
-      {
         path: 'product/:id',
         name: 'Product',
         component: () => import('@/views/Product')
@@ -25,7 +20,23 @@ const routes = [
         component: () => import('@/views/Detail')
       }
     ]
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/Login'),
+    meta: {
+      title: '登录'
+    }
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('@/views/Register'),
+    meta: {
+      title: '注册'
+    }
   }
-];
+]
 
-export default routes;
+export default routes
